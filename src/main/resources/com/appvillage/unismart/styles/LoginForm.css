@@ -1,0 +1,54 @@
+.bg-form {
+    -fx-background-color: linear-gradient(to bottom right, #4E4C4B, #1C2429);
+}
+
+.header {
+    -fx-font-size: 2em;
+    -fx-border-width: 0 0 0 10px;
+    -fx-padding: 0 0 0 10px;
+    -fx-text-fill:#86C9F8;
+    -fx-font-weight: bold;
+}
+
+.headerLogo {
+    -fx-fill: linear-gradient(to bottom right, #91e7ff, #005d76);
+}
+
+.faUser {
+    -fx-fill: #4ebef8;
+}
+
+.faLock {
+    -fx-fill: #4ebef8;
+}
+
+.faEnvelope {
+    -fx-fill: #4ebef8;
+}
+
+.txtRole {
+    -fx-text-fill: #ff5959;
+}
+
+.text-field {
+    -fx-padding: 0 0 0 30px;
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to bottom right, #fff, #fff);
+    -fx-border-width: 0.8px;
+    -fx-text-fill: #fff;
+}
+
+.text-field:focused {
+    -fx-border-color: #fff;
+    -fx-background-color: #172128;
+}
+.btn {
+    -fx-background-color: linear-gradient(to bottom right, #58B4F6, #002F4D);
+    -fx-text-fill: #ddd;
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+    -fx-font-family: Arial;
+}
+.btn:hover {
+    -fx-background-color: linear-gradient(to bottom right, #002F4D, #58B4F6);
+}
