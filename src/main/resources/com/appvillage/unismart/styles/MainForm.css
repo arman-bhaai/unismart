@@ -35,3 +35,13 @@
     -fx-background-color: #0abfa4;
     -fx-border-color: #0abfa4;
 }
+
+.close {
+    -fx-background-color: #ff2929;
+    -fx-background-radius: 50px;
+    -fx-cursor: hand;
+}
+
+.close:hover {
+    -fx-background-color: #000;
+}

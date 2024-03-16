@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.StackPane?>
@@ -30,22 +32,22 @@
                         </Button>
                         <Button layoutX="47.0" layoutY="186.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Student">
                            <graphic>
-                              <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="2em" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="2em" />
                            </graphic>
                         </Button>
                         <Button layoutX="47.0" layoutY="236.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Teacher">
                            <graphic>
-                              <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="2em" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="USER" size="2em" />
                            </graphic>
                         </Button>
                         <Button layoutX="47.0" layoutY="286.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Course">
                            <graphic>
-                              <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="2em" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="2em" text="" />
                            </graphic>
                         </Button>
                         <Button layoutX="47.0" layoutY="337.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Subject">
                            <graphic>
-                              <FontAwesomeIcon fill="WHITE" glyphName="PLUS_CIRCLE" size="2em" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="2em" />
                            </graphic>
                         </Button>
                         <Button layoutX="47.0" layoutY="387.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Payment">
@@ -63,7 +65,7 @@
                   </AnchorPane>
                </left>
                <top>
-                  <AnchorPane prefHeight="49.0" prefWidth="1100.0" styleClass="main-bg" stylesheets="@styles/MainForm.css" BorderPane.alignment="CENTER">
+                  <AnchorPane prefHeight="49.0" prefWidth="1100.0" stylesheets="@styles/MainForm.css" BorderPane.alignment="CENTER">
                      <children>
                         <Label layoutX="94.0" layoutY="14.0" text="Dashboard Form" textFill="WHITE">
                            <font>
@@ -71,8 +73,57 @@
                            </font>
                         </Label>
                      </children>
+                     <styleClass>
+                        <String fx:value="main-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
                   </AnchorPane>
                </top>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ScrollPane layoutX="15.2" layoutY="14.0" prefHeight="129.0" prefWidth="782.0" stylesheets="@styles/MainForm.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="117.0" prefWidth="1050.0" />
+                                      </content>
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </ScrollPane>
+                                    <AnchorPane layoutX="15.0" layoutY="163.0" prefHeight="345.0" prefWidth="396.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="394.0" AnchorPane.topAnchor="182.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="460.0" layoutY="183.2" prefHeight="165.0" prefWidth="370.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="201.6" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="183.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <AnchorPane layoutX="460.0" layoutY="355.0" prefHeight="165.0" prefWidth="370.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="23.0" AnchorPane.rightAnchor="11.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
             </BorderPane>
          </children>
       </AnchorPane>
