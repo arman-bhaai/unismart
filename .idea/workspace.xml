@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat: add login and registration module">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/MainForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/unismart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/unismart.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,12 +98,21 @@
       <option name="project" value="LOCAL" />
       <updated>1710528252458</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: add login and registration module">
+      <option name="closed" value="true" />
+      <created>1710554434615</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710554434615</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="In the name of Allah..." />
     <MESSAGE value="feat: add login and registration module" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add login and registration module" />
+    <MESSAGE value="feat: add admin dashboard navigation panel" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

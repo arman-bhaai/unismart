@@ -191,9 +191,7 @@ public class UniSmartCt implements Initializable {
         sql = String.format("SELECT * FROM users WHERE username='%s'", username);
 //        sql = "SELECT * FROM users WHERE username='bbb'";
         rs = stmt.executeQuery(sql);
-        if(rs.next())
-            return true;
-        return false;
+        return rs.next();
     }
     private boolean validateRegistrationForm(String username, String password, String cfPassword, String email){
         if(email!=null){

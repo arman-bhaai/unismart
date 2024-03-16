@@ -14,7 +14,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appvillage.unismart.UniSmartCt">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appvillage.unismart.UniSmartCt">
     <children>
         <AnchorPane fx:id="loginForm" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@styles/LoginForm.css">
             <children>
@@ -149,7 +149,7 @@
                 <FontAwesomeIcon fill="#00dc00" glyphName="ENVELOPE" layoutX="100.0" layoutY="202.0" size="1.5em" styleClass="faEnvelope" />
             </children>
         </AnchorPane>
-        <AnchorPane fx:id="teacherForm" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@styles/LoginForm.css">
+        <AnchorPane fx:id="teacherForm" prefHeight="200.0" prefWidth="200.0" styleClass="bg-form" stylesheets="@styles/LoginForm.css" visible="false">
             <children>
                 <FontAwesomeIcon glyphName="USER" layoutX="172.0" layoutY="86.0" selectionFill="#a10d0d" selectionStart="0" size="6em" text="">
                     <fill>
