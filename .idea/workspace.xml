@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="In the name of Allah...">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AlertMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/ListData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/LoginForm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/unismart.fxml" afterDir="false" />
+    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat: add login and registration module">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/MainForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AppUniSmart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/CtAppUniSmart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/app-unismart-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,26 +46,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_directory_selection": "C:/Users/Arman_Bhaai/dev/projects/UniSmart/src/main/java/com/appvillage/unismart",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Arman_Bhaai/dev/projects/UniSmart/src/main/java/com/appvillage/unismart&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Arman_Bhaai\dev\projects\UniSmart\src\main\resources\com\appvillage\unismart" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.appvillage.unismart.UniSmart" />
+      <module name="UniSmart" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,11 +93,20 @@
       <option name="project" value="LOCAL" />
       <updated>1710485713187</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add login and registration module">
+      <option name="closed" value="true" />
+      <created>1710528252458</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710528252458</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="In the name of Allah..." />
-    <option name="LAST_COMMIT_MESSAGE" value="In the name of Allah..." />
+    <MESSAGE value="feat: add login and registration module" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add login and registration module" />
   </component>
 </project>

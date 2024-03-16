@@ -3,10 +3,14 @@ package com.appvillage.unismart;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -119,6 +123,9 @@ public class UniSmartCt implements Initializable {
             stmt = conn.createStatement();
             stmt.executeUpdate("DROP TABLE IF EXISTS users;");
             stmt.executeUpdate("CREATE TABLE users (id INT NOT NULL AUTO_INCREMENT, username VARCHAR(100), password VARCHAR(100), email VARCHAR(100), role VARCHAR(100), date Date, PRIMARY KEY (id));");
+            stmt.executeUpdate("INSERT INTO users (username, email, password, role, date) VALUES ('student', 'john@example.com', '123', 'student', '2024-03-16')");
+            stmt.executeUpdate("INSERT INTO users (username, email, password, role, date) VALUES ('teacher', 'john@example.com', '123', 'teacher', '2024-03-16')");
+            stmt.executeUpdate("INSERT INTO users (username, password, role, date) VALUES ('admin', '123', 'admin', '2024-03-16')");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -151,7 +158,7 @@ public class UniSmartCt implements Initializable {
         loginForm.setVisible(true);
     }
 
-    public void handleLogin() throws SQLException {
+    public void handleLogin() throws SQLException, IOException, InterruptedException {
         String username = loginUsername.getText();
         String password = loginPassword.getText();
 
@@ -161,7 +168,21 @@ public class UniSmartCt implements Initializable {
         prStmt.setString(2, password);
         ResultSet rs = prStmt.executeQuery();
         if(rs.next()){
-            alert.successMessage("Logged In");
+            String role = rs.getString("role");
+            System.out.println("logged in as : "+ role);
+            Thread.sleep(1000);
+//            alert.successMessage("Logged In");
+            if(role.equals("admin")){
+                // link to Main Form for Admin
+                FXMLLoader root = new FXMLLoader(UniSmart.class.getResource("admin-main-form.fxml"));
+                Stage stg = new Stage();
+                stg.setTitle("UniSmart | Admin Portal");
+                stg.setScene(new Scene(root.load()));
+                stg.show();
+
+                // hide login form
+                loginBtnLogin.getScene().getWindow().hide();
+            }
         } else {
             alert.errorMessage("Incorrect username or password!");
         }
