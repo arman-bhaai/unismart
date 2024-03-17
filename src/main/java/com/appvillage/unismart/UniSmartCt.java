@@ -117,6 +117,11 @@ public class UniSmartCt implements Initializable {
     }
 
     public void initialize(URL url, ResourceBundle rb){
+//        try {
+//            loadAdminPanel();
+//        } catch (IOException e) {
+//            throw new RuntimeException(e);
+//        }
         populateRoleList();
         try {
             conn = Database.connectDB();
@@ -158,7 +163,16 @@ public class UniSmartCt implements Initializable {
         loginForm.setVisible(true);
     }
 
+    public void loadAdminPanel() throws IOException {
+        FXMLLoader root = new FXMLLoader(UniSmart.class.getResource("admin-main-form.fxml"));
+        Stage stg = new Stage();
+        stg.setTitle("UniSmart | Admin Portal");
+        stg.setScene(new Scene(root.load()));
+        stg.show();
+    }
+
     public void handleLogin() throws SQLException, IOException, InterruptedException {
+//        loadAdminPanel();
         String username = loginUsername.getText();
         String password = loginPassword.getText();
 
@@ -174,11 +188,7 @@ public class UniSmartCt implements Initializable {
 //            alert.successMessage("Logged In");
             if(role.equals("admin")){
                 // link to Main Form for Admin
-                FXMLLoader root = new FXMLLoader(UniSmart.class.getResource("admin-main-form.fxml"));
-                Stage stg = new Stage();
-                stg.setTitle("UniSmart | Admin Portal");
-                stg.setScene(new Scene(root.load()));
-                stg.show();
+                loadAdminPanel();
 
                 // hide login form
                 loginBtnLogin.getScene().getWindow().hide();

@@ -2,16 +2,23 @@
 
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import java.lang.String?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appvillage.unismart.AdminMainFormCt">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
@@ -20,42 +27,42 @@
                   <AnchorPane prefHeight="600.0" prefWidth="294.0" styleClass="main-bg" stylesheets="@styles/MainForm.css" BorderPane.alignment="CENTER">
                      <children>
                         <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="123.0" layoutY="72.0" size="5em" />
-                        <Label layoutX="91.0" layoutY="81.0" text="Welcome, Admin" textFill="WHITE">
+                        <Label fx:id="greetUsername" layoutX="91.0" layoutY="81.0" text="Welcome, Admin" textFill="WHITE">
                            <font>
                               <Font size="15.0" />
                            </font>
                         </Label>
-                        <Button layoutX="47.0" layoutY="136.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Dashboard">
+                        <Button fx:id="btn_dashboard" layoutX="47.0" layoutY="136.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Dashboard">
                            <graphic>
                               <FontAwesomeIcon fill="WHITE" glyphName="DASHBOARD" size="2em" />
                            </graphic>
                         </Button>
-                        <Button layoutX="47.0" layoutY="186.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Student">
+                        <Button fx:id="btn_addStudent" layoutX="47.0" layoutY="186.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Student">
                            <graphic>
                               <FontAwesomeIcon fill="WHITE" glyphName="USERS" size="2em" />
                            </graphic>
                         </Button>
-                        <Button layoutX="47.0" layoutY="236.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Teacher">
+                        <Button fx:id="btn_addTeacher" layoutX="47.0" layoutY="236.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Teacher">
                            <graphic>
                               <FontAwesomeIcon fill="WHITE" glyphName="USER" size="2em" />
                            </graphic>
                         </Button>
-                        <Button layoutX="47.0" layoutY="286.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Course">
+                        <Button fx:id="btn_addCourse" layoutX="47.0" layoutY="286.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Course">
                            <graphic>
-                              <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="2em" text="" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="DOLLAR" size="2em" text="" />
                            </graphic>
                         </Button>
-                        <Button layoutX="47.0" layoutY="337.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Subject">
+                        <Button fx:id="btn_addSubject" layoutX="47.0" layoutY="337.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Add Subject">
                            <graphic>
                               <FontAwesomeIcon fill="WHITE" glyphName="BOOK" size="2em" />
                            </graphic>
                         </Button>
-                        <Button layoutX="47.0" layoutY="387.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Payment">
+                        <Button fx:id="btn_payment" layoutX="47.0" layoutY="387.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Payment">
                            <graphic>
-                              <FontAwesomeIcon fill="WHITE" glyphName="MONEY" size="2em" />
+                              <FontAwesomeIcon fill="WHITE" glyphName="DOLLAR" size="2em" />
                            </graphic>
                         </Button>
-                        <Button layoutX="47.0" layoutY="437.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Salary">
+                        <Button fx:id="btn_salary" layoutX="47.0" layoutY="437.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="nav-btn" stylesheets="@styles/MainForm.css" text="Salary">
                            <graphic>
                               <FontAwesomeIcon fill="WHITE" glyphName="MONEY" size="2em" />
                            </graphic>
@@ -84,11 +91,95 @@
                      <children>
                         <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <ScrollPane layoutX="15.2" layoutY="14.0" prefHeight="129.0" prefWidth="782.0" stylesheets="@styles/MainForm.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
+                                    <ScrollPane layoutX="15.2" layoutY="14.0" prefHeight="154.0" prefWidth="782.0" stylesheets="@styles/MainForm.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
                                       <content>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="117.0" prefWidth="1050.0" />
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="138.0" prefWidth="1050.0">
+                                             <children>
+                                                <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="118.0" prefWidth="247.0" stylesheets="@styles/MainForm.css">
+                                                   <styleClass>
+                                                      <String fx:value="main-bg" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                   <children>
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="22.0" layoutY="78.0" selectionFill="BLACK" size="5em" />
+                                                      <Label alignment="CENTER_RIGHT" layoutX="104.0" layoutY="20.0" prefHeight="27.0" prefWidth="134.0" text="Total Students" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="149.0" layoutY="68.0" prefHeight="18.0" prefWidth="76.0" text="0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="295.0" layoutY="10.0" prefHeight="118.0" prefWidth="247.0" stylesheets="@styles/MainForm.css">
+                                                   <styleClass>
+                                                      <String fx:value="main-bg" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                   <children>
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="26.0" layoutY="79.0" selectionFill="BLACK" size="5em" />
+                                                      <Label alignment="CENTER_RIGHT" layoutX="102.0" layoutY="21.0" prefHeight="27.0" prefWidth="130.0" text="Total Teachers" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="153.0" layoutY="69.0" prefHeight="18.0" prefWidth="76.0" text="0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="575.0" layoutY="9.0" prefHeight="118.0" prefWidth="247.0" stylesheets="@styles/MainForm.css">
+                                                   <styleClass>
+                                                      <String fx:value="main-bg" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                   <children>
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="USER_PLUS" layoutX="22.0" layoutY="75.0" selectionFill="BLACK" size="5em" />
+                                                      <Label alignment="CENTER_RIGHT" layoutX="71.0" layoutY="17.0" prefHeight="27.0" prefWidth="165.0" text="Students Registered" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="70.0" layoutY="36.0" prefHeight="27.0" prefWidth="165.0" text="Today" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="149.0" layoutY="65.0" prefHeight="18.0" prefWidth="76.0" text="0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="856.0" layoutY="9.0" prefHeight="118.0" prefWidth="247.0" stylesheets="@styles/MainForm.css">
+                                                   <styleClass>
+                                                      <String fx:value="main-bg" />
+                                                      <String fx:value="radius" />
+                                                   </styleClass>
+                                                   <children>
+                                                      <FontAwesomeIcon fill="WHITE" glyphName="MONEY" layoutX="13.0" layoutY="72.0" selectionFill="BLACK" size="5em" />
+                                                      <Label alignment="CENTER_RIGHT" layoutX="101.0" layoutY="14.0" prefHeight="27.0" prefWidth="136.0" text="Total Income" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER_RIGHT" layoutX="140.0" layoutY="62.0" prefHeight="18.0" prefWidth="76.0" text="0" textFill="WHITE">
+                                                         <font>
+                                                            <Font size="24.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </AnchorPane>
                                       </content>
                                        <styleClass>
                                           <String fx:value="white-bg" />
@@ -102,6 +193,16 @@
                                           <String fx:value="radius" />
                                           <String fx:value="shadow" />
                                        </styleClass>
+                                       <children>
+                                          <AreaChart layoutX="-77.0" layoutY="-69.0" prefHeight="344.8" prefWidth="423.19999999999993" title="Students Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </AreaChart>
+                                       </children>
                                     </AnchorPane>
                                     <AnchorPane layoutX="460.0" layoutY="183.2" prefHeight="165.0" prefWidth="370.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="201.6" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="183.0">
                                        <styleClass>
@@ -109,6 +210,16 @@
                                           <String fx:value="radius" />
                                           <String fx:value="shadow" />
                                        </styleClass>
+                                       <children>
+                                          <BarChart layoutX="-49.0" layoutY="-127.0" prefHeight="273.6" prefWidth="451.2" title="Teachers Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </BarChart>
+                                       </children>
                                     </AnchorPane>
                                     <AnchorPane layoutX="460.0" layoutY="355.0" prefHeight="165.0" prefWidth="370.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="23.0" AnchorPane.rightAnchor="11.0">
                                        <styleClass>
@@ -116,6 +227,48 @@
                                           <String fx:value="radius" />
                                           <String fx:value="shadow" />
                                        </styleClass>
+                                       <children>
+                                          <LineChart layoutX="-130.0" layoutY="-153.0" prefHeight="247.2" prefWidth="370.4" title="Income Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </LineChart>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="form_addStudent" layoutX="10.0" layoutY="10.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.39999999999997726" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="19.0" layoutY="21.0" prefHeight="508.0" prefWidth="763.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
+                                       <children>
+                                          <TableView fx:id="tableView_addStudent" layoutX="8.8" layoutY="11.2" prefHeight="430.0" prefWidth="742.0" AnchorPane.bottomAnchor="108.79999999999995" AnchorPane.leftAnchor="8.800000000000068" AnchorPane.rightAnchor="54.40000000000009" AnchorPane.topAnchor="11.199999999999989">
+                                            <columns>
+                                              <TableColumn fx:id="addStudent_col_studentNo" prefWidth="83.19997864961624" text="Student No." />
+                                              <TableColumn fx:id="addStudent_col_name" prefWidth="107.9999771118164" text="Name " />
+                                                <TableColumn fx:id="addStudent_col_year" minWidth="1.60003662109375" prefWidth="65.60005187988281" text="Year" />
+                                                <TableColumn fx:id="addStudent_col_course" prefWidth="95.199951171875" text="Course" />
+                                                <TableColumn fx:id="addStudent_col_section" minWidth="0.0" prefWidth="67.199951171875" text="Section" />
+                                                <TableColumn fx:id="addStudent_col_pay" minWidth="3.20001220703125" prefWidth="56.0" text="Pay" />
+                                                <TableColumn fx:id="addStudent_col_statusPayment" prefWidth="94.4000244140625" text="Status Payment" />
+                                                <TableColumn fx:id="addStudent_col_dateInsert" minWidth="3.20001220703125" prefWidth="69.60003662109375" text="Date Insert" />
+                                                <TableColumn fx:id="addStudent_col_status" prefWidth="111.20001220703125" text="Status" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                          </TableView>
+                                          <Button fx:id="addStudent_btn_update" layoutX="502.0" layoutY="458.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Update" AnchorPane.bottomAnchor="56.0" AnchorPane.rightAnchor="200.0" />
+                                          <Button fx:id="addStudent_btn_add" layoutX="382.0" layoutY="458.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Add" AnchorPane.bottomAnchor="56.39999999999998" AnchorPane.rightAnchor="316.40000000000003" />
+                                          <Button fx:id="addStudent_btn_delete" layoutX="641.0" layoutY="458.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="107.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Delete" AnchorPane.bottomAnchor="56.39999999999998" AnchorPane.rightAnchor="57.40000000000002" />
+                                       </children>
                                     </AnchorPane>
                                  </children>
                               </AnchorPane>
