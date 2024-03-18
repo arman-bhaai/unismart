@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat: add admin dashboard summary form">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/StudentData.java" afterDir="false" />
+    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat: add admin dashboard student table-view">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AddStudentCt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/add-student.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/ListData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/ListData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/StudentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/StudentData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/MainForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/MainForm.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +60,10 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Arman_Bhaai/dev/projects/UniSmart/src/main/java/com/appvillage/unismart&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Arman_Bhaai/Downloads/mysql-connector-java-8.0.25.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.45057473&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -125,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710588824232</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: add admin dashboard student table-view">
+      <option name="closed" value="true" />
+      <created>1710666993095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710666993096</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,6 +146,7 @@
     <MESSAGE value="feat: add admin dashboard navigation panel" />
     <MESSAGE value="bugfix: fix login panel" />
     <MESSAGE value="feat: add admin dashboard summary form" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add admin dashboard summary form" />
+    <MESSAGE value="feat: add admin dashboard student table-view" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add admin dashboard student table-view" />
   </component>
 </project>

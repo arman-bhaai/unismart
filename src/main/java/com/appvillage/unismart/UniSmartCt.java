@@ -105,6 +105,21 @@ public class UniSmartCt implements Initializable {
     ResultSet rs;
     AlertMessage alert = new AlertMessage();
 
+    private int studentID;
+    public int getStudentIDGenerator() throws SQLException {
+        String selectData = "SELECT MAX(id) FROM student";
+        conn = Database.connectDB();
+        int tmp_studentID = 0;
+
+        stmt = conn.createStatement();
+        rs = stmt.executeQuery(selectData);
+        if(rs.next()){
+            tmp_studentID = rs.getInt("MAX(id)");
+        }
+        tmp_studentID++;
+        studentID = tmp_studentID;
+        return studentID;
+    }
     public void populateRoleList(){
         List<String> listR = new ArrayList<>();
 
@@ -117,11 +132,11 @@ public class UniSmartCt implements Initializable {
     }
 
     public void initialize(URL url, ResourceBundle rb){
-//        try {
-//            loadAdminPanel();
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
+        try {
+            loadAdminPanel();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         populateRoleList();
         try {
             conn = Database.connectDB();
