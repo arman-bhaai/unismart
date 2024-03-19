@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat:add student add-update-delete   feature">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/TeacherData.java" afterDir="false" />
+    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat:add admin panel teacher management module">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AddStudentCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AddStudentCt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/ListData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/ListData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710797736672</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat:add admin panel teacher management module">
+      <option name="closed" value="true" />
+      <created>1710883389027</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710883389027</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -153,6 +158,7 @@
     <MESSAGE value="feat: add admin dashboard summary form" />
     <MESSAGE value="feat: add admin dashboard student table-view" />
     <MESSAGE value="feat:add student add-update-delete   feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:add student add-update-delete   feature" />
+    <MESSAGE value="feat:add admin panel teacher management module" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:add admin panel teacher management module" />
   </component>
 </project>

@@ -2,6 +2,7 @@ package com.appvillage.unismart;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -89,7 +90,19 @@ public class AdminMainFormCt implements Initializable {
     private Button btn_salary;
 
     @FXML
+    private AnchorPane form_addCourse;
+
+    @FXML
     private AnchorPane form_addStudent;
+
+    @FXML
+    private AnchorPane form_addSubject;
+
+    @FXML
+    private AnchorPane form_addTeacher;
+
+    @FXML
+    private AnchorPane form_dashboard;
 
     @FXML
     private Label greetUsername;
@@ -548,6 +561,44 @@ public class AdminMainFormCt implements Initializable {
         ListData.path = "";
         addTeacher_imageView.setImage(null);
     }
+    public void switchForm(ActionEvent e){
+        form_dashboard.setVisible(false);
+        form_addStudent.setVisible(false);
+        form_addTeacher.setVisible(false);
+        form_addCourse.setVisible(false);
+        form_addSubject.setVisible(false);
+        if(e.getSource() == btn_dashboard){
+            form_dashboard.setVisible(true);
+            form_addStudent.setVisible(false);
+            form_addTeacher.setVisible(false);
+            form_addCourse.setVisible(false);
+            form_addSubject.setVisible(false);
+        } else if(e.getSource() == btn_addStudent){
+            form_dashboard.setVisible(false);
+            form_addStudent.setVisible(true);
+            form_addTeacher.setVisible(false);
+            form_addCourse.setVisible(false);
+            form_addSubject.setVisible(false);
+        } else if(e.getSource() == btn_addTeacher){
+            form_dashboard.setVisible(false);
+            form_addStudent.setVisible(false);
+            form_addTeacher.setVisible(true);
+            form_addCourse.setVisible(false);
+            form_addSubject.setVisible(false);
+        } else if(e.getSource() == btn_addCourse){
+            form_dashboard.setVisible(false);
+            form_addStudent.setVisible(false);
+            form_addTeacher.setVisible(false);
+            form_addCourse.setVisible(true);
+            form_addSubject.setVisible(false);
+        } else if(e.getSource() == btn_addSubject){
+            form_dashboard.setVisible(false);
+            form_addStudent.setVisible(false);
+            form_addTeacher.setVisible(false);
+            form_addCourse.setVisible(false);
+            form_addSubject.setVisible(true);
+        }
+    }
 
 
     @Override
@@ -611,5 +662,11 @@ public class AdminMainFormCt implements Initializable {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        // initial ui
+        form_dashboard.setVisible(true);
+        form_addStudent.setVisible(false);
+        form_addTeacher.setVisible(false);
+        form_addCourse.setVisible(false);
+        form_addSubject.setVisible(false);
     }
 }
