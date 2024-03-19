@@ -75,7 +75,7 @@
                   </AnchorPane>
                </left>
                <top>
-                  <AnchorPane prefHeight="49.0" prefWidth="1100.0" stylesheets="@styles/MainForm.css" BorderPane.alignment="CENTER">
+                  <AnchorPane onMouseEntered="#addStudentDisplayData" prefHeight="49.0" prefWidth="1100.0" stylesheets="@styles/MainForm.css" BorderPane.alignment="CENTER">
                      <children>
                         <Label layoutX="94.0" layoutY="14.0" text="Dashboard Form" textFill="WHITE">
                            <font>
@@ -275,7 +275,7 @@
                                     </AnchorPane>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane layoutX="277.0" layoutY="102.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <AnchorPane fx:id="form_addTeacher" layoutX="277.0" layoutY="102.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
                                     <AnchorPane layoutX="10.0" layoutY="9.0" prefHeight="282.0" prefWidth="786.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="259.20000000000005" AnchorPane.leftAnchor="9.600000000000023" AnchorPane.rightAnchor="9.200000000000045" AnchorPane.topAnchor="9.0">
                                        <styleClass>
@@ -284,7 +284,7 @@
                                           <String fx:value="radius" />
                                        </styleClass>
                                        <children>
-                                          <TableView fx:id="tableView_addTeacher" layoutX="11.0" layoutY="12.0" prefHeight="260.0" prefWidth="766.0" AnchorPane.bottomAnchor="10.400000000000034" AnchorPane.leftAnchor="11.200000000000045" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="12.000000000000057">
+                                          <TableView fx:id="tableView_addTeacher" layoutX="11.0" layoutY="12.0" onMouseClicked="#addTeacherSelectedItems" prefHeight="260.0" prefWidth="766.0" AnchorPane.bottomAnchor="10.400000000000034" AnchorPane.leftAnchor="11.200000000000045" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="12.000000000000057">
                                             <columns>
                                               <TableColumn fx:id="addTeacher_col_teacherID" prefWidth="75.0" text="Teacher ID" />
                                               <TableColumn fx:id="addTeacher_col_name" prefWidth="75.0" text="Name" />
@@ -334,11 +334,11 @@
                                                 <ImageView fx:id="addTeacher_imageView" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
                                              </children>
                                           </AnchorPane>
-                                          <Button fx:id="addTeacher_importBtn" layoutX="652.0" layoutY="120.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Import" AnchorPane.rightAnchor="34.40000000000009" AnchorPane.topAnchor="120.0" />
-                                          <Button fx:id="addTeacher_addBtn" layoutX="210.0" layoutY="181.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Add" />
-                                          <Button fx:id="addTeacher_updateBtn" layoutX="328.0" layoutY="181.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Update" />
-                                          <Button fx:id="addTeacher_clearBtn" layoutX="481.0" layoutY="181.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Clear" />
-                                          <Button fx:id="addTeacher_deleteBtn" layoutX="599.0" layoutY="181.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Delete" />
+                                          <Button fx:id="addTeacher_importBtn" layoutX="652.0" layoutY="120.0" mnemonicParsing="false" onAction="#addTeacherImportBtn" prefHeight="36.0" prefWidth="100.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Import" AnchorPane.rightAnchor="34.40000000000009" AnchorPane.topAnchor="120.0" />
+                                          <Button fx:id="addTeacher_addBtn" layoutX="210.0" layoutY="181.0" mnemonicParsing="false" onAction="#addTeacherAddBtn" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Add" />
+                                          <Button fx:id="addTeacher_updateBtn" layoutX="328.0" layoutY="181.0" mnemonicParsing="false" onAction="#addTeacherUpdateBtn" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Update" />
+                                          <Button fx:id="addTeacher_clearBtn" layoutX="481.0" layoutY="181.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Clear" />
+                                          <Button fx:id="addTeacher_deleteBtn" layoutX="599.0" layoutY="181.0" mnemonicParsing="false" onAction="#addTeacherDeleteBtn" prefHeight="38.0" prefWidth="102.0" styleClass="btn" stylesheets="@styles/MainForm.css" text="Delete" />
                                        </children>
                                     </AnchorPane>
                                  </children>

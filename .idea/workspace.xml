@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat: add admin dashboard student table-view">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AddStudentCt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/add-student.fxml" afterDir="false" />
+    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat:add student add-update-delete   feature">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/TeacherData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AddStudentCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AddStudentCt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/ListData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/ListData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/StudentData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/StudentData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/UniSmartCt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710666993096</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat:add student add-update-delete   feature">
+      <option name="closed" value="true" />
+      <created>1710797736672</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1710797736672</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,6 +152,7 @@
     <MESSAGE value="bugfix: fix login panel" />
     <MESSAGE value="feat: add admin dashboard summary form" />
     <MESSAGE value="feat: add admin dashboard student table-view" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add admin dashboard student table-view" />
+    <MESSAGE value="feat:add student add-update-delete   feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:add student add-update-delete   feature" />
   </component>
 </project>

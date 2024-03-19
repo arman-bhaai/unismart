@@ -171,7 +171,7 @@ public class AddStudentCt implements Initializable {
 
                 Path transfer = Paths.get(path);
                 Path copy = Paths.get("C:\\Users\\Arman_Bhaai\\dev\\projects\\UniSmart\\src\\main\\java\\" +
-                        "studentDirectory\\"+studentID.getText()+".jpg");
+                        "studentDirectory"+studentID.getText()+".jpg");
                 Files.copy(transfer, copy, StandardCopyOption.REPLACE_EXISTING);
 
                 alert.successMessage("Added Successfully!");
@@ -219,7 +219,7 @@ public class AddStudentCt implements Initializable {
 
                 Path transfer = Paths.get(path);
                 Path copy = Paths.get("C:\\Users\\Arman_Bhaai\\dev\\projects\\UniSmart\\src\\main\\java\\" +
-                        "studentDirectory\\"+studentID.getText()+".jpg");
+                        "studentDirectory"+studentID.getText()+".jpg");
                 Files.copy(transfer, copy, StandardCopyOption.REPLACE_EXISTING);
 
                 conn = Database.connectDB();
@@ -357,6 +357,8 @@ public class AddStudentCt implements Initializable {
         statusList();
         semesterList();
         genderList();
+
+
         try {
             displayStudentID();
             setFields();
