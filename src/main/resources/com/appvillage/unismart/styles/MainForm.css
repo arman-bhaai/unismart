@@ -13,31 +13,53 @@
 }
 
 .main-bg {
-    -fx-background-color: linear-gradient(to bottom right, #0d9642, #1a722c);
-}
+    -fx-background-color: linear-gradient(to bottom right, #2e3192, #1d1e59);  /*good*/
+    -fx-background-color: linear-gradient(to bottom right, #39b976, #00917c); /*good*/
+    -fx-background-color: linear-gradient(to bottom right, #2e2c54, #534666); /*best*/
+    -fx-background-color: linear-gradient(to bottom right, #4b2e83, #6d4d9c); /*good*/
+    -fx-background-color: linear-gradient(to bottom right, #1c0f14, #5c3d51, #3d2b3e);
+    -fx-background-color: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e); /*best*/
+    -fx-background-color: linear-gradient(to bottom right, #0e0f1f, #2e3852, #1f2841); /*best*/
+    -fx-background-color: linear-gradient(to bottom right, #0f0f28, #3f3f79, #2d2d58); /*good*/
 
+
+    -fx-background-color: linear-gradient(to bottom right, #1e1e3f, #4d4d8d, #3b3b6d); /*best*/
+}
 .btn {
     -fx-background-color: linear-gradient(to bottom right, #0d9642, #1a722c);
+    -fx-background-color: linear-gradient(to bottom right, #1e1e3f, #4d4d8d, #3b3b6d);
     -fx-font-family: Arial;
     -fx-font-size: 14px;
     -fx-cursor: hand;
     -fx-text-fill: #fff;
+
+    -fx-background-color: linear-gradient(to bottom right, #1e1e3f, #4d4d8d, #3b3b6d);
+    -fx-background-radius: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0.5, 0, 0), innershadow(gaussian, rgba(255, 255, 255, 0.1), 5, 0.3, 0, 0);
+    -fx-transition: -fx-effect 0.3s, -fx-background-radius 0.3s, -fx-background-color 0.3s;
 }
 .btn:hover {
-    -fx-background-color: linear-gradient(to bottom right, #0abfa4, #00d079);
+    -fx-background-color: linear-gradient(to bottom right, #2a2a57, #6363a8, #5151a0);
+    -fx-background-radius: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 20, 0.7, 0, 0), innershadow(gaussian, rgba(255, 255, 255, 0.5), 10, 0.7, 0, 0);
+    -fx-transition: -fx-effect 0.3s, -fx-background-radius 0.3s, -fx-background-color 0.3s;
 }
 
 .nav-btn {
-    -fx-background-color: transparent;
     -fx-cursor: hand;
-    -fx-border-color: #fff;
-    -fx-border-width: .8px;
     -fx-text-fill: #fff;
+
+    -fx-background-color: linear-gradient(to bottom right, #1e1e3f, #4d4d8d, #3b3b6d);
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.3, 0, 0);
+    -fx-transition: -fx-effect 0.3s, -fx-background-color 0.3s;
 }
 
 .nav-btn:hover {
-    -fx-background-color: #0abfa4;
-    -fx-border-color: #0abfa4;
+    -fx-background-color: linear-gradient(to bottom right, #2a2a57, #6363a8, #5151a0);
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 10, 0.5, 0, 0), innershadow(gaussian, rgba(255, 255, 255, 0.4), 5, 0.4, 0, 0);
+    -fx-transition: -fx-effect 0.3s, -fx-background-color 0.3s, -fx-background-radius 0.3s;
 }
 
 .close {
@@ -53,12 +75,13 @@
 .table-view {
     -fx-background-color: transparent;
     -fx-padding: 0;
-    -fx-border-color: linear-gradient(to bottom right, #0d9642, #1a722c);
+    -fx-border-color: linear-gradient(to bottom right, #1e1e3f, #4d4d8d, #3b3b6d);
     -fx-border-radius: 8px;
+
 }
 
 .table-view .column-header-background {
-    -fx-background-color: linear-gradient(to bottom right, #0d9642, #1a722c);
+    -fx-background-color: linear-gradient(to bottom right, #1e1e3f, #4d4d8d, #3b3b6d);
     -fx-background-insets: 0 0 0 0;
     -fx-background-radius: 8px 8px 0 0;
 }
@@ -70,4 +93,26 @@
 
 .table-view .column-header .label {
     -fx-text-fill: #fff;
+}
+/*.table-view .table-row-cell:even {
+  -fx-background-color: linear-gradient(to right, #87CEEB, #1E90FF);
+}
+.table-view .table-row-cell:odd {
+  -fx-background-color: linear-gradient(to right, #FF6347, #FFA07A);
+}*/
+.table-view .table-row-cell {
+-fx-background-color: linear-gradient(to right, #4b6cb7, #182848);
+}
+.table-view .table-cell {
+  -fx-text-fill: #fff;
+}
+
+
+.root-bg {
+-fx-background-color: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
+-fx-background-color: linear-gradient(to right, #1f1c2c, #928dab);
+-fx-background-color: linear-gradient(to right, #232526, #414345);
+}
+.table-bg{
+-fx-background-color: linear-gradient(to right, #4b6cb7, #182848);
 }

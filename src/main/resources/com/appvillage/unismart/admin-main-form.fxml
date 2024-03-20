@@ -94,11 +94,11 @@
                      <children>
                         <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
-                              <AnchorPane fx:id="form_dashboard" layoutX="12.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <AnchorPane fx:id="form_dashboard" layoutX="12.0" layoutY="14.0" prefHeight="550.4" prefWidth="805.6" styleClass="root-bg" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
                                     <ScrollPane layoutX="15.2" layoutY="14.0" prefHeight="154.0" prefWidth="782.0" stylesheets="@styles/MainForm.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
                                       <content>
-                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="138.0" prefWidth="1050.0">
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="138.0" prefWidth="1050.0" stylesheets="@styles/MainForm.css">
                                              <children>
                                                 <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="118.0" prefWidth="247.0" stylesheets="@styles/MainForm.css">
                                                    <styleClass>
@@ -197,7 +197,7 @@
                                           <String fx:value="shadow" />
                                        </styleClass>
                                        <children>
-                                          <AreaChart layoutX="-77.0" layoutY="-69.0" prefHeight="344.8" prefWidth="423.19999999999993" title="Students Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                          <AreaChart layoutX="-77.0" layoutY="-69.0" prefHeight="344.8" prefWidth="423.19999999999993" stylesheets="@styles/MainForm.css" title="Students Data" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                             <xAxis>
                                               <CategoryAxis side="BOTTOM" />
                                             </xAxis>
@@ -245,14 +245,9 @@
                               </AnchorPane>
                               <AnchorPane fx:id="form_addStudent" layoutX="10.0" layoutY="10.0" prefHeight="550.4" prefWidth="805.6" visible="false" AnchorPane.bottomAnchor="0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.39999999999997726" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <AnchorPane layoutX="19.0" layoutY="21.0" prefHeight="508.0" prefWidth="763.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <styleClass>
-                                          <String fx:value="white-bg" />
-                                          <String fx:value="radius" />
-                                          <String fx:value="shadow" />
-                                       </styleClass>
+                                    <AnchorPane layoutX="19.0" layoutY="21.0" prefHeight="508.0" prefWidth="763.0" styleClass="root-bg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <TableView fx:id="tableView_addStudent" layoutX="8.8" layoutY="11.2" prefHeight="430.0" prefWidth="742.0" AnchorPane.bottomAnchor="108.79999999999995" AnchorPane.leftAnchor="8.800000000000068" AnchorPane.rightAnchor="54.40000000000009" AnchorPane.topAnchor="11.199999999999989">
+                                          <TableView fx:id="tableView_addStudent" layoutX="8.8" layoutY="11.2" prefHeight="430.0" prefWidth="742.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="108.79999999999995" AnchorPane.leftAnchor="8.800000000000068" AnchorPane.rightAnchor="54.40000000000009" AnchorPane.topAnchor="11.199999999999989">
                                             <columns>
                                               <TableColumn fx:id="addStudent_col_studentNo" prefWidth="83.19997864961624" text="Student No." />
                                               <TableColumn fx:id="addStudent_col_name" prefWidth="107.9999771118164" text="Name " />
@@ -284,7 +279,7 @@
                                           <String fx:value="radius" />
                                        </styleClass>
                                        <children>
-                                          <TableView fx:id="tableView_addTeacher" layoutX="11.0" layoutY="12.0" onMouseClicked="#addTeacherSelectedItems" prefHeight="260.0" prefWidth="766.0" AnchorPane.bottomAnchor="10.400000000000034" AnchorPane.leftAnchor="11.200000000000045" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="12.000000000000057">
+                                          <TableView fx:id="tableView_addTeacher" layoutX="11.0" layoutY="12.0" onMouseClicked="#addTeacherSelectedItems" prefHeight="260.0" prefWidth="766.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="10.400000000000034" AnchorPane.leftAnchor="11.200000000000045" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="12.000000000000057">
                                             <columns>
                                               <TableColumn fx:id="addTeacher_col_teacherID" prefWidth="75.0" text="Teacher ID" />
                                               <TableColumn fx:id="addTeacher_col_name" prefWidth="75.0" text="Name" />
@@ -396,7 +391,7 @@
                                     </AnchorPane>
                                  </children>
                               </AnchorPane>
-                              <AnchorPane fx:id="form_addSubject" layoutX="10.0" layoutY="10.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.39999999999997726" AnchorPane.topAnchor="0.0">
+                              <AnchorPane fx:id="form_addSubject" layoutX="10.0" layoutY="10.0" prefHeight="550.4" prefWidth="805.6" visible="false" AnchorPane.bottomAnchor="0.39999999999997726" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.39999999999997726" AnchorPane.topAnchor="0.0">
                                  <children>
                                     <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="535.0" prefWidth="298.0" stylesheets="@styles/MainForm.css" AnchorPane.bottomAnchor="7.199999999999932" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="7.999999999999886">
                                        <styleClass>
@@ -448,6 +443,17 @@
                                              </columnResizePolicy>
                                           </TableView>
                                        </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="149.0" layoutY="81.0" prefHeight="550.4" prefWidth="805.6" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <AnchorPane layoutX="10.0" layoutY="11.0" prefHeight="199.0" prefWidth="788.0" stylesheets="@styles/MainForm.css">
+                                       <styleClass>
+                                          <String fx:value="white-bg" />
+                                          <String fx:value="radius" />
+                                          <String fx:value="shadow" />
+                                       </styleClass>
                                     </AnchorPane>
                                  </children>
                               </AnchorPane>

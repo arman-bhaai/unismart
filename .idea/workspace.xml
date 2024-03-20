@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat:add admin panel teacher management module">
+    <list default="true" id="389167a0-d327-435e-bd43-e7a5a8d11d56" name="Changes" comment="feat:add GUI for addCourse and addSubject">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/appvillage/unismart/AdminMainFormCt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/admin-main-form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/LoginForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/LoginForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/MainForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/appvillage/unismart/styles/MainForm.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,23 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Arman_Bhaai/dev/projects/UniSmart/src/main/java/com/appvillage/unismart&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Arman_Bhaai/Downloads/mysql-connector-java-8.0.25.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.45057473&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "C:/Users/Arman_Bhaai/dev/projects/UniSmart/src/main/java/com/appvillage/unismart",
+    "last_opened_file_path": "C:/Users/Arman_Bhaai/Downloads/mysql-connector-java-8.0.25.jar",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.45057473",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Arman_Bhaai\dev\projects\UniSmart\src\main\resources\com\appvillage\unismart" />
@@ -147,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710883389027</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="feat:add GUI for addCourse and addSubject">
+      <option name="closed" value="true" />
+      <created>1710891869757</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1710891869757</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +169,7 @@
     <MESSAGE value="feat: add admin dashboard student table-view" />
     <MESSAGE value="feat:add student add-update-delete   feature" />
     <MESSAGE value="feat:add admin panel teacher management module" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:add admin panel teacher management module" />
+    <MESSAGE value="feat:add GUI for addCourse and addSubject" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:add GUI for addCourse and addSubject" />
   </component>
 </project>
