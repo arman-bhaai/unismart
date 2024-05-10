@@ -132,11 +132,11 @@ public class UniSmartCt implements Initializable {
     }
 
     public void initialize(URL url, ResourceBundle rb){
-        try {
+        /*try {
             loadAdminPanel();
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+        }*/
         populateRoleList();
         try {
             conn = Database.connectDB();

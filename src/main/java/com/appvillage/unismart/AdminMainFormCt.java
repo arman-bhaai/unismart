@@ -105,6 +105,12 @@ public class AdminMainFormCt implements Initializable {
     private AnchorPane form_dashboard;
 
     @FXML
+    private AnchorPane form_payment;
+
+    @FXML
+    private AnchorPane form_salary;
+
+    @FXML
     private Label greetUsername;
 
     // start addTeacher form
@@ -562,41 +568,62 @@ public class AdminMainFormCt implements Initializable {
         addTeacher_imageView.setImage(null);
     }
     public void switchForm(ActionEvent e){
-        form_dashboard.setVisible(false);
-        form_addStudent.setVisible(false);
-        form_addTeacher.setVisible(false);
-        form_addCourse.setVisible(false);
-        form_addSubject.setVisible(false);
         if(e.getSource() == btn_dashboard){
             form_dashboard.setVisible(true);
             form_addStudent.setVisible(false);
             form_addTeacher.setVisible(false);
             form_addCourse.setVisible(false);
             form_addSubject.setVisible(false);
+            form_payment.setVisible(false);
+            form_salary.setVisible(false);
         } else if(e.getSource() == btn_addStudent){
             form_dashboard.setVisible(false);
             form_addStudent.setVisible(true);
             form_addTeacher.setVisible(false);
             form_addCourse.setVisible(false);
             form_addSubject.setVisible(false);
+            form_payment.setVisible(false);
+            form_salary.setVisible(false);
         } else if(e.getSource() == btn_addTeacher){
             form_dashboard.setVisible(false);
             form_addStudent.setVisible(false);
             form_addTeacher.setVisible(true);
             form_addCourse.setVisible(false);
             form_addSubject.setVisible(false);
+            form_payment.setVisible(false);
+            form_salary.setVisible(false);
         } else if(e.getSource() == btn_addCourse){
             form_dashboard.setVisible(false);
             form_addStudent.setVisible(false);
             form_addTeacher.setVisible(false);
             form_addCourse.setVisible(true);
             form_addSubject.setVisible(false);
+            form_payment.setVisible(false);
+            form_salary.setVisible(false);
         } else if(e.getSource() == btn_addSubject){
             form_dashboard.setVisible(false);
             form_addStudent.setVisible(false);
             form_addTeacher.setVisible(false);
             form_addCourse.setVisible(false);
             form_addSubject.setVisible(true);
+            form_payment.setVisible(false);
+            form_salary.setVisible(false);
+        } else if(e.getSource() == btn_payment){
+            form_dashboard.setVisible(false);
+            form_addStudent.setVisible(false);
+            form_addTeacher.setVisible(false);
+            form_addCourse.setVisible(false);
+            form_addSubject.setVisible(false);
+            form_payment.setVisible(true);
+            form_salary.setVisible(false);
+        } else if(e.getSource() == btn_salary){
+            form_dashboard.setVisible(false);
+            form_addStudent.setVisible(false);
+            form_addTeacher.setVisible(false);
+            form_addCourse.setVisible(false);
+            form_addSubject.setVisible(false);
+            form_payment.setVisible(false);
+            form_salary.setVisible(true);
         }
     }
 
@@ -615,15 +642,20 @@ public class AdminMainFormCt implements Initializable {
 
             // add dummy data
             // student 1
+            String usr1Url = "C:\\Users\\Arman_Bhaai\\dev\\projects\\UniSmart\\src\\main\\java\\images\\demo-user.jpg";
+            usr1Url=usr1Url.replace("\\", "\\\\");
+
             stmt.executeUpdate("INSERT INTO student (studentID, fullName, gender, birthDate, year, course, section, semester, payment, " +
                     "statusPayment, image, dateInsert, dateUpdate, dateDelete, status) " +
-                    "VALUES ('04', 'arman bhaai', 'male', '1999-01-01', '3', 'bangla', 'c', '1st sem', 300.4, 'payment ok', 'url', '2024-01-01', " +
+                    "VALUES ('1', 'Saiful Islam', 'Male', '1999-01-01', '2nd Year', 'B.Sc', 'A', '4th sem', 1500, 'Pending', '"+usr1Url+"', '2024-01-01', " +
                     "'2024-01-01', NULL, 'pending')");
             // student 2
+            String usr2Url = "C:\\Users\\Arman_Bhaai\\dev\\projects\\UniSmart\\src\\main\\java\\images\\demo-user2.jpg";
+            usr2Url=usr2Url.replace("\\", "\\\\");
             stmt.executeUpdate("INSERT INTO student (studentID, fullName, gender, birthDate, year, course, section, semester, payment, " +
                     "statusPayment, image, dateInsert, dateUpdate, dateDelete, status) " +
-                    "VALUES ('10', 'raihan bro', 'male', '1999-01-01', '3', 'bangla', 'c', '2nd sem', 300.4, 'payment ok', 'url', '2024-01-01', " +
-                    "'2024-01-01', NULL, 'pending')");
+                    "VALUES ('2', 'Abu Bakar Siddique', 'Male', '1999-01-01', '2nd Year', 'B.Sc', 'A', '4th Semester', 2000, 'Accepted', '"+usr2Url+"', '2024-01-01', " +
+                    "'2024-01-01', NULL, 'Accepted')");
 //            stmt.executeUpdate("INSERT INTO users (username, email, password, role, date) VALUES ('teacher', 'john@example.com', '123', 'teacher', '2024-03-16')");
 //            stmt.executeUpdate("INSERT INTO users (username, password, role, date) VALUES ('admin', '123', 'admin', '2024-03-16')");
 
@@ -636,15 +668,19 @@ public class AdminMainFormCt implements Initializable {
                     "dateDelete Date, status VARCHAR(100), PRIMARY KEY (id));");
             // add dummy data
             // teacher 1
+            usr1Url = "C:\\Users\\Arman_Bhaai\\dev\\projects\\UniSmart\\src\\main\\java\\images\\kamal-sir.jpg";
+            usr1Url=usr1Url.replace("\\", "\\\\");
             stmt.executeUpdate("INSERT INTO teacher (teacherID, name, gender, birthDate, yearOfExperience, experience, " +
                     "department, " +
-                    "salary, dateInsert, status)"  +
-                    "VALUES ('TID-1', 'arman bhaai', 'male', '1999-01-01', '3', 'tech', 'bangla', '1000', '1999-01-01', 'pending')");
+                    "salary, dateInsert, status, image)"  +
+                    "VALUES ('TID-1', 'Dr. Md. Kamal Uddin', 'Male', '1999-01-01', ' 3', 'Programming', 'CSTE', '50000', '1999-01-01', 'pending', '"+usr1Url+"')");
             // teacher 2
+            usr2Url = "C:\\Users\\Arman_Bhaai\\dev\\projects\\UniSmart\\src\\main\\java\\images\\rana-sir.jpg";
+            usr2Url=usr2Url.replace("\\", "\\\\");
             stmt.executeUpdate("INSERT INTO teacher (teacherID, name, gender, birthDate, yearOfExperience, experience, " +
                     "department, " +
-                    "salary, dateInsert, status)"  +
-                    "VALUES ('TID-2', 'raihan bhaai', 'male', '1999-01-01', '3', 'sing', 'cste', '1000', '1999-01-01', 'pending')");
+                    "salary, dateInsert, status, image)"  +
+                    "VALUES ('TID-2', 'A.R.M Mahamudul Hasan Rana', 'Male', '1999-01-01', '3', 'Algorithm', 'CSTE', '40000', '1999-01-01', 'pending', '"+usr2Url+"')");
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -668,5 +704,7 @@ public class AdminMainFormCt implements Initializable {
         form_addTeacher.setVisible(false);
         form_addCourse.setVisible(false);
         form_addSubject.setVisible(false);
+        form_payment.setVisible(false);
+        form_salary.setVisible(false);
     }
 }

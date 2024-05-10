@@ -100,12 +100,13 @@
 .table-view .table-row-cell:odd {
   -fx-background-color: linear-gradient(to right, #FF6347, #FFA07A);
 }*/
-.table-view .table-row-cell {
+/*.table-view .table-row-cell {
 -fx-background-color: linear-gradient(to right, #4b6cb7, #182848);
 }
 .table-view .table-cell {
   -fx-text-fill: #fff;
 }
+*/
 
 
 .root-bg {
